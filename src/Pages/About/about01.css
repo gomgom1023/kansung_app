@@ -1,0 +1,106 @@
+.about01{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.about01_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_list_wrap{
+    width: 55%;
+    height: 55%;
+}
+
+.list_text{
+    width: 100%;
+    height: auto;
+}
+
+.list_text + .list_text{
+    margin-top: 8em;
+}
+
+.list_text h2{
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2em;
+    padding: 0 2%;
+}
+
+.list_text h2 strong{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.list_text p{
+    margin: 48px 0 0;
+    padding: 48px 2% 0;
+    border-top:1px solid #111111;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.list_img{
+    position: sticky;
+    top:100px;
+    right:0;
+    width: 36%;
+    height: auto; /* 이미지 높이 자동 조정 */
+    align-self: flex-start; /* 상단 정렬 */
+}
+
+.list_img img{
+    display: block;
+    width: 100%;
+}
+
+.about01_bot{
+    position: relative;
+    background: url('../../images//about01_bot_bg.jpg') 0 50% no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    padding: 10em 0;
+}
+
+.about01_bot::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0,0,0,0.75);
+    z-index: -1; 
+}
+
+.about01_bot h3{
+    font-size:3em;
+    font-family:'Eulyoo1945', 'sans-serif';
+}
+
+.about01_bot > div{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    color:#ffffff;
+}
+
+.about01_bot > div p.con{
+    margin: 2em auto 5em;
+    padding: 2em 0 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size:1.15em;
+    line-height: 1.75em;
+    font-weight: 300;
+}
+
+.about01_bot > div p.sing{
+    text-align: right;
+}

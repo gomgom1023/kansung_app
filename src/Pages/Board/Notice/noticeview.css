@@ -1,0 +1,93 @@
+.view_title{
+    padding: 4em 0;
+    text-align: center;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.view_title > span{
+    display: inline-block;
+    padding: 12px 2%;
+    border-radius: 100px;
+    background: #000;
+    color:#fff;
+    font-size: 13px;
+}
+
+.view_title h2{
+    margin: 0.75em 0;
+    font-size:1.75em
+}
+.view_title ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0 2em;
+}
+
+.view_contents{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.view_bot{
+    margin: 5em auto;
+}
+
+.view_bot ul li{
+    display: flex;
+    font-size:16px;
+    padding: 22px 0;
+    border-top: 1px solid rgba(1,1,1,0.1);
+    border-bottom: 1px solid rgba(1,1,1,0.1);
+    transition: all 0.3s;
+}
+
+.view_bot ul li + li{
+    margin-top: 1em;
+}
+
+.view_bot ul li:hover{
+    border-color: #111111;
+}
+
+.view_bot ul li:hover button{
+    color:#111111;
+}
+
+.view_bot ul li > *{
+    padding: 0 2%;
+}
+
+.view_bot ul li span{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view_bot ul li button{
+    width: 75%;
+    border-left: 1px solid #eee;
+    text-align: left;
+    color:#999;
+    transition: all 0.3s;
+}
+
+.board_btn{
+    display: block;
+    max-width: 120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 2%;
+    text-align: center;
+    background-color: #4b4440;
+    color:#ffffff;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.board_btn:hover{
+    background-color: #2d2927;
+}

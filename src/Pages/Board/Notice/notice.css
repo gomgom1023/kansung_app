@@ -1,0 +1,133 @@
+
+.notice_top_contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab_box ul{
+    display: flex;
+    gap:0 1em;
+}
+
+.tab_box ul li button{
+    font-size: 18px;
+    color:rgba(0,0,0,0.3)
+}
+
+.tab_box ul li button:hover{
+    text-decoration: underline;
+}
+
+.tab_box ul li button.active{
+    color:#111111;
+}
+
+.search_wrap form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search_wrap form label{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 10px 0 20px;
+    transition: all 0.3s;
+}
+
+.search_wrap form input{   
+    width: 100%;
+    height: 100%;
+    padding: 10px 4%;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.search_wrap form input:focus,
+.search_wrap form input:not(:placeholder-shown){
+  border-color: #111111;
+}
+
+.search_select{
+    display: flex;
+}
+
+.search_list{
+    display: none;
+}
+
+.search_wrap form button{
+    background-color: #111;
+    display: block;
+    padding: 14px;
+    border-radius: 3px;
+}
+
+.search_wrap form button img{
+    max-width: 26px;
+    width: 100%;
+    filter: invert(1);
+}
+
+.notice table{
+    width: 100%;
+    margin: 60px auto 0;
+}
+
+.notice table thead{
+    background-color: rgb(55 52 46);
+}
+
+.notice table thead tr th{
+    padding: 1.5em 2%;
+    font-weight: 400;
+    border-left: 1px solid #ffffff;
+    font-size: 1.1em;
+}
+
+.notice table thead tr th:nth-child(1){
+    width: 10%;
+}
+.notice table thead tr th:nth-child(2){
+    width: 60%;
+}
+.notice table thead tr th:nth-child(3){
+    width: 20%;
+}
+.notice table thead tr th:nth-child(4){
+    width: 10%;
+}
+
+.notice table tbody tr{
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: all 1s ease;
+    font-weight: 400;
+}
+
+.notice table tbody tr:hover::after{
+    width: 100%;
+}
+
+.notice table tbody tr::after{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(97 94 85);
+    content: '';
+    transition: width 0.6s ease; /* width에만 트랜지션 적용 */
+}
+
+.notice table tbody tr td{
+    padding: 2em 2%;
+    text-align: center;
+    font-size: 1.05em;
+}
+
+.notice table tbody tr td.text_left{
+    text-align: left;
+}

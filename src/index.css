@@ -1,0 +1,24 @@
+@tailwind base;    /* Tailwind의 기본 스타일 초기화 */
+@tailwind components; /* Tailwind의 기본 컴포넌트 스타일 */
+@tailwind utilities; /* Tailwind의 유틸리티 클래스 */
+
+@font-face {
+  font-family: 'Eulyoo1945';
+  src: url('/assets/fonts/Eulyoo1945-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Eulyoo1945-Regular.woff') format('woff'),
+       url('/assets/fonts/Eulyoo1945-Regular.eot'); /* Fallback */
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eulyoo1945';
+  src: url('/assets/fonts/Eulyoo1945-SemiBold.woff2') format('woff2'),
+       url('/assets/fonts/Eulyoo1945-SemiBold.woff') format('woff'),
+       url('/assets/fonts/Eulyoo1945-SemiBold.eot'); /* Fallback */
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+
+
